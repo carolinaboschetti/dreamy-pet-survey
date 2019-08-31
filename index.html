@@ -15,9 +15,41 @@
         <form>
             <fieldset class="fieldset">
                 <legend>Personal information:</legend>
+                <label for="name" class="label">Name(*):</label>
+                    <input type="text" class="field" name="name" id="name" required placeholder="Enter your name"><br>
+                <label for="Email">E-mail(*):</label>
+                    <input type="email" class="field" name="Email" id="Email" required placeholder="Enter your E-mail"><br>
+                <label for="Age">Age(*):</label>
+                    <input type="number" class="field" name="Age" id="Age" required placeholder="Enter your age"><br>
             </fieldset>
             <fieldset class="fieldset">
                     <legend>Survey questions:</legend>
+                    <p class="questions">1. What is your dream pet?
+                        <select name="animals" id="animals">
+                            <option value="">None</option>
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option>
+                            <option value="fish">Fish</option>
+                            <option value="rabbit">Rabbit</option>
+                        </select></p>
+                    <p class="questions">2. What color does it have?</p>
+                        <input type="radio" name="pet-color" value="brown">
+                        <label>Brown</label><br>
+                        <input type="radio" name="pet-color" value="white">
+                        <label>White</label><br>
+                        <input type="radio" name="pet-color" value="black">
+                        <label>Black</label><br>
+                        <input type="radio" name="pet-color" value="other">
+                        <label>Other</label><br>
+                    <p class="questions">3. What names would be perfect for your pet?</p>
+                        <input type="checkbox" name="pet-names" value="yellow">
+                        <label>yellow</label><br>
+                        <input type="checkbox" name="pet-names" value="red">
+                        <label>red</label><br>
+                        <input type="checkbox" name="pet-names" value="blue">
+                        <label>blue</label><br>
+                    <p class="questions">4. Why is he/she your dream pet? Leave your comments.</p>
+                        <textarea rows="5" cols="90"></textarea>
                 </fieldset>
             <input type="submit" value="submit">
         </form>
