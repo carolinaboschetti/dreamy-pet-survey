@@ -47,6 +47,10 @@ body {
     height: 25px;
   }
   
+  .field.invalid{
+    border-color: red;
+  }
+  
   .questions {
     margin-bottom: 14px;
   }
