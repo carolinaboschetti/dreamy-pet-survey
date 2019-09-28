@@ -10,7 +10,6 @@ inputs.forEach(function(input) {
         const element = event.target
         element.setCustomValidity("")
         let isValid = element.checkValidity()
-        
         if (!isValid) {
             element.setCustomValidity(setErrorMsg(element))
             element.classList.add("invalid")
